@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>DicionarioCoreano</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Tradutor</display-name>
+    <servlet-name>Tradutor</servlet-name>
+    <servlet-class>servlet.Tradutor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tradutor</servlet-name>
+    <url-pattern>/Tradutor</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TradutorServLet</display-name>
+    <servlet-name>TradutorServLet</servlet-name>
+    <servlet-class>servlet.TradutorServLet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TradutorServLet</servlet-name>
+    <url-pattern>/TradutorServLet</url-pattern>
+  </servlet-mapping>
+</web-app>
